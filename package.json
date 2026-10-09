@@ -1,0 +1,11 @@
+{
+  "name": "gnss-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "start": "node gnss-planner/server.mjs",
+    "test": "node --test gnss-planner/test/*.test.mjs"
+  }
+}

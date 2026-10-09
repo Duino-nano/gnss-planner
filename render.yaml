@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gnss-planner
+    runtime: node
+    plan: free
+    buildCommand: node --test gnss-planner/test/*.test.mjs
+    startCommand: node gnss-planner/server.mjs
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: NODE_ENV
+        value: production
